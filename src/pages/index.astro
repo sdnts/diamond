@@ -1,0 +1,58 @@
+---
+import { Diamond } from "../components/Diamond";
+import { GitHub } from "../components/GitHub";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>💎</title>
+  </head>
+  <body>
+    <main>
+      <Diamond client:load />
+    </main>
+
+    <footer>
+      <a
+        href="https://github.com/sdnts/diamond/blob/main/src/components/Diamond.tsx"
+      >
+        <GitHub />
+      </a>
+    </footer>
+  </body>
+</html>
+
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+    background: #171413;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    width: inherit;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    margin-bottom: 3rem;
+    opacity: 0.5;
+  }
+
+  footer:hover {
+    opacity: 1;
+  }
+</style>
